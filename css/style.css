@@ -1,0 +1,56 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    background-color: #554994;
+}
+
+.big_title{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 250px;
+    height: 200px;
+    margin: 0 0 40px 40px;
+    border: 0.5rem solid #000;
+    border-radius: 2rem;
+}
+.green{
+    background-color: rgb(14, 187, 14);
+}
+.red{
+    background-color: rgb(226, 2, 2);
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+
+.pressed{
+    box-shadow: 0 0 30px 5px rgb(215, 213, 218);
+    scale: 1.02;
+    transition: 0.2s;
+}
+
+.wrongInput{
+    width: 100%;
+    height: 100vh;
+    background-color:#FF0000;
+}
+
+.footerInfo{
+    font-family: cursive;
+    position: absolute;
+    top: 90%;
+}
