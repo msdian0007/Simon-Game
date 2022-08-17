@@ -14,7 +14,21 @@ $(document).keypress(function(){
     },400);
 });
 
-$(".btn").click(function(){
+$(".start_button").click(function(){
+    $(this).addClass("start_button_hover");
+    setTimeout(function(){
+        $(".start_button").removeClass("start_button_hover");
+    },200)
+
+    setTimeout(function(){
+        if(!gameStart){
+            nextSequence();
+            gameStart=true;
+        }
+    },400);
+});
+
+$(".bttn").click(function(){
     const getId = $(this).attr("id");
     userInput.push(getId);
 
@@ -50,7 +64,7 @@ function checkAns(userInpLength){
     else{
         playSound("wrong");
         $("body").addClass("wrongInput");
-        $(".big_title").html("Game over, press any key to Restart")
+        $(".big_title").html("Game Over!"+"<br>"+"Press START button to Restart the Game")
         setTimeout(function(){
             $("body").removeClass("wrongInput");
         },500)

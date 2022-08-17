@@ -7,20 +7,21 @@ body{
 
 .big_title{
     color: #fff;
+    line-height: 35px;
     font-size: 1.5rem;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
-.row{
+.row_1, .row_2{
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.bttn{
     width: 250px;
     height: 200px;
-    margin: 0 0 40px 40px;
+    margin:20px 20px;
     border: 0.5rem solid #000;
     border-radius: 2rem;
 }
@@ -35,6 +36,23 @@ body{
 }
 .blue{
     background-color: blue;
+}
+
+.start_button{
+    font-family: 'Times New Roman', Times, serif;
+    width: 60px;
+    height: 60px;
+    font-size: 0.9rem;
+    border-radius: 100%;
+    border: 0;
+    color: rgb(14, 187, 14);
+    font-weight: bold;
+}
+
+.start_button_hover{
+    box-shadow: 0px 0px 10px 5px rgb(162, 163, 163);
+    color: #000;
+    scale: 1.1;
 }
 
 .pressed{
@@ -52,5 +70,5 @@ body{
 .footerInfo{
     font-family: cursive;
     position: absolute;
-    top: 90%;
+    /* top: 90%; */
 }
